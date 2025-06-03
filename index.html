@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ADDED Meta Description -->
+    <meta name="description" content="Personal portfolio of Dr. Haroon Zia, a 4th-year MBBS student. Showcasing his medical journey, passion for cardiology, surgical specialties, medical innovation, and commitment to patient care.">
     <title>Dr Haroon Zia - Aspiring Physician</title>
+    <!-- ADDED Favicon Link (make sure you have favicon.ico in images folder) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -309,10 +313,12 @@
             position: relative;
             border-radius: 8px;
             box-shadow: var(--card-shadow);
-            transition: transform var(--transition-speed) ease;
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease; /* ADDED box-shadow to transition */
         }
+        /* ADDED Hover Effect for Timeline Content */
         .timeline-content:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(41, 128, 185, 0.15); 
         }
         .timeline-content h3 {
             color: var(--primary-color);
@@ -341,9 +347,10 @@
             box-shadow: var(--card-shadow);
             transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
         }
+        /* MODIFIED Hover Effect for Interest Card */
         .interest-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            box-shadow: 0 10px 25px rgba(41, 128, 185, 0.2); 
         }
         .interest-card .icon {
             font-size: 3rem;
@@ -530,7 +537,6 @@
 
     <nav id="navbar">
         <div class="container">
-            <!-- UPDATED Degree in Logo -->
             <a href="#hero" class="logo">Dr Haroon Zia<span>, MBBS (Cand.)</span></a>
             <button class="menu-toggle" id="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
@@ -583,7 +589,6 @@
                 <div class="timeline-item left" style="--logo-url: url('images/smc.jpg');">
                     <div class="timeline-content">
                         <span class="date">2021 - Present</span>
-                        <!-- UPDATED Degree Name -->
                         <h3>Medical School - Bachelor of Medicine, Bachelor of Surgery (MBBS) Program</h3>
                         <h4>Saidu Medical College, Swat</h4>
                         <p>Currently in my 4th year, deeply engaged in comprehensive clinical rotations. I've particularly valued my experiences in Medical and Surgical disciplines, gaining critical hands-on skills and patient management insights. My commitment extends beyond academics as an active member of the campus community.</p>
@@ -606,7 +611,6 @@
                 </div>
                 <div class="timeline-item right" style="--logo-url: url('images/cck.jpg');">
                     <div class="timeline-content">
-                        <!-- UPDATED Start Year for Cadet College -->
                         <span class="date">2015 - 2018</span>
                         <h3>Secondary School Certificate (Matriculation)</h3>
                         <h4>Cadet College Kohat</h4>
@@ -672,6 +676,8 @@
             </form>
             <div class="contact-info">
                 <p>You can also reach me via email: <a href="mailto:haroonzia9301@gmail.com">haroonzia9301@gmail.com</a></p>
+                <!-- ADDED LinkedIn link here -->
+                <p>Connect with me on <a href="https://www.linkedin.com/in/haroon-zia-a3a516369/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
             </div>
         </div>
     </section>
@@ -679,8 +685,10 @@
     <footer>
         <div class="container">
             <div class="social-links" style="margin-bottom:15px;">
+                <!-- ADDED LinkedIn Icon Link -->
+                <a href="https://www.linkedin.com/in/haroon-zia-a3a516369/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <!-- Removed Facebook link from previous step -->
             </div>
-            <!-- UPDATED Degree in Footer -->
             <p>© <span id="currentYear"></span> Dr. (Cand.) Haroon Zia. MBBS Program. All Rights Reserved.</p>
             <p>This website is a personal space for reflection and connection.</p>
         </div>
