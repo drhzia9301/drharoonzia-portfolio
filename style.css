@@ -1,3 +1,10 @@
+/* --- TEMPORARY TEST: MAKE HERO BACKGROUND RED --- */
+#hero {
+    background: red !important;
+}
+/* --- END OF TEST --- */
+
+
 :root {
     /* Light Mode Color Palette */
     --primary-color: #3456a1; /* Dark Blue for text */
