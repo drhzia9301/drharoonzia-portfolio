@@ -1,10 +1,3 @@
-/* --- TEMPORARY TEST: MAKE HERO BACKGROUND RED --- */
-#hero {
-    background: red !important;
-}
-/* --- END OF TEST --- */
-
-
 :root {
     /* Light Mode Color Palette */
     --primary-color: #3456a1; /* Dark Blue for text */
@@ -295,13 +288,27 @@ footer .footer-note { font-size: 0.9rem; opacity: 0.7; margin-top: 5px; margin-b
     .timeline-item { padding-left: 50px; }
     .timeline-icon { width: 32px; height: 32px; font-size: 1rem; left: 0; }
     .contact-wrapper { padding: 20px; }
-
-    /* --- FIXES FOR MOBILE --- */
-    .tagline {
-        font-size: 1.2rem; /* Reduced to prevent text wrapping */
-        min-height: 50px;  /* Prevents layout jump */
+    
+    .hero-content {
+        padding: 25px; /* Reduce padding on small screens */
     }
-    .contact-info p {
-        justify-content: center; /* Centers icon and text */
+
+    .tagline {
+        font-size: 1.15rem; /* Further reduce font size to guarantee it fits */
+        min-height: 50px;  /* Prevents layout jump */
+        line-height: 1.4;  /* Improve line spacing if it does wrap */
+    }
+    
+    .contact-text {
+        /* This centers the block of text containing the contact info */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info {
+        /* This makes the container a centered column */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
