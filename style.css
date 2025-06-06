@@ -294,21 +294,16 @@ footer .footer-note { font-size: 0.9rem; opacity: 0.7; margin-top: 5px; margin-b
     }
 
     .tagline {
-        font-size: 1.15rem; /* Further reduce font size to guarantee it fits */
-        min-height: 50px;  /* Prevents layout jump */
-        line-height: 1.4;  /* Improve line spacing if it does wrap */
+        font-size: 1.2rem; /* Final size for tagline */
+        min-height: 55px;  /* Increased height to prevent jump */
+        line-height: 1.4; 
     }
     
     .contact-text {
-        /* This centers the block of text containing the contact info */
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center; /* This centers all text inside the .contact-text block */
     }
 
-    .contact-info {
-        /* This makes the container a centered column */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .contact-info p {
+        justify-content: center; /* Ensures the icon+text are centered within their own line */
     }
 }
