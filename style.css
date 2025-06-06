@@ -259,15 +259,22 @@ footer {
 .social-links a:hover { color: var(--primary-color); }
 footer .footer-note { font-size: 0.9rem; opacity: 0.7; margin-top: 5px; margin-bottom: 0; }
 
-/* Responsive Design */
+/* --- RESPONSIVE DESIGN --- */
+
+/* For Tablets and smaller devices */
 @media (max-width: 992px) {
     .about-content, .contact-wrapper { grid-template-columns: 1fr; }
     .about-image { margin: 0 auto 40px auto; }
     .about-content { text-align: center; }
-    /* This rule now centers the contact text on tablets and phones */
-    .contact-text { text-align: center; margin-bottom: 40px; }
+
+    /*  This is the key fix that targets the text container on tablets and phones */
+    .contact-text { 
+      text-align: center; 
+      margin-bottom: 40px;
+    }
 }
 
+/* For Phones */
 @media (max-width: 768px) {
     body { padding-top: 70px; }
     #navbar {
@@ -291,7 +298,7 @@ footer .footer-note { font-size: 0.9rem; opacity: 0.7; margin-top: 5px; margin-b
     .contact-wrapper { padding: 20px; }
     
     .hero-content {
-        padding: 25px; /* Reduce padding on small screens */
+        padding: 25px;
     }
 
     .tagline {
@@ -299,12 +306,6 @@ footer .footer-note { font-size: 0.9rem; opacity: 0.7; margin-top: 5px; margin-b
         min-height: 55px;  
     }
     
-    /* --- THE FINAL, DEFINITIVE FIX --- */
-    /* By targeting the wrapper AND the text block, we increase specificity */
-    .contact-wrapper .contact-text {
-        text-align: center !important; /* The !important ensures this rule wins */
-    }
-
     .contact-info p {
         justify-content: center; 
     }
