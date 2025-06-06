@@ -288,20 +288,13 @@ footer .footer-note { font-size: 0.9rem; opacity: 0.7; margin-top: 5px; margin-b
     .timeline-item { padding-left: 50px; }
     .timeline-icon { width: 32px; height: 32px; font-size: 1rem; left: 0; }
     .contact-wrapper { padding: 20px; }
-}
 
-/* --- Additional Mobile Fixes --- */
-@media (max-width: 768px) {
-    
-    /* Fix for the dynamic text wrapping */
+    /* --- FIXES FOR MOBILE --- */
     .tagline {
-        font-size: 1.2rem; /* Reduced from 1.5rem to prevent wrapping */
-        min-height: 50px; /* Prevents the layout from "jumping" as text changes */
+        font-size: 1.2rem; /* Reduced to prevent text wrapping */
+        min-height: 50px;  /* Prevents layout jump */
     }
-
-    /* Fix for the contact info alignment */
     .contact-info p {
-        justify-content: center; /* Centers the icon and text together */
+        justify-content: center; /* Centers icon and text */
     }
-
 }
